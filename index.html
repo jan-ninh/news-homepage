@@ -56,70 +56,187 @@
     </main>
 
     <footer class="py-8 bg-slate-900 text-center">
-      <div class="mx-auto max-w-screen-xl px-4 md:px-6 border-1">
+      <div class="mx-auto max-w-screen-xl px-4 md:px-6">
         <!-- Footer Content (Dandy) -->
-        <div id="footer-menu" class="border-1">Footer Menu</div>
         <div
           id="footer-links"
-          class="flex flex-wrap justify-evenly gap-3 select-none px-6 py-10 sm:p-10 text-xs text-gray-400"
+          class="pt-15 grid xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 select-none text-xs text-gray-400"
         >
-          <div class="footer-link w-35 sm:w-39 md:w-39 lg:w-46 xl:w-50">
+          <div class="footer-link">
             <span
               id="footer-btn-login"
-              class="cursor-pointer active:cursor-grabbing hover:text-white"
+              class="cursor-pointer hover:text-gray-200 active:text-white lg:active:cursor-grabbing"
               >Login</span
             >
           </div>
-          <div class="footer-link w-35 sm:w-39 md:w-39 lg:w-46 xl:w-50">
-            <span id="footer-btn-" class="cursor-pointer active:cursor-grabbing hover:text-white"
+          <div class="footer-link">
+            <span
+              id="footer-btn-newsletter"
+              class="cursor-pointer hover:text-gray-200 active:text-white active:cursor-grabbing"
               >Newsletter</span
             >
           </div>
-          <div class="footer-link w-35 sm:w-39 md:w-39 lg:w-46 xl:w-50">
-            <span id="footer-btn-" class="cursor-pointer active:cursor-grabbing hover:text-white"
+          <div class="footer-link">
+            <span
+              id="footer-btn-contact"
+              class="cursor-pointer hover:text-gray-200 active:text-white active:cursor-grabbing"
               >Contact</span
             >
           </div>
-          <div class="footer-link w-35 sm:w-39 md:w-39 lg:w-46 xl:w-50">
-            <span id="footer-btn-" class="cursor-pointer active:cursor-grabbing hover:text-white"
+          <div class="footer-link">
+            <span
+              id="footer-btn-jobs"
+              class="cursor-pointer hover:text-gray-200 active:text-white active:cursor-grabbing"
               >Jobs</span
             >
           </div>
-          <div class="footer-link w-35 sm:w-39 md:w-39 lg:w-46 xl:w-50">
-            <span id="footer-btn-" class="cursor-pointer active:cursor-grabbing hover:text-white"
+          <div class="footer-link">
+            <span
+              id="footer-btn-imprint"
+              class="cursor-pointer hover:text-gray-200 active:text-white active:cursor-grabbing"
               >Imprint</span
             >
           </div>
-          <div class="footer-link w-35 sm:w-39 md:w-39 lg:w-46 xl:w-50">
-            <span id="footer-btn-" class="cursor-pointer active:cursor-grabbing hover:text-white"
+          <div class="footer-link">
+            <span
+              id="footer-btn-accessibility"
+              class="cursor-pointer hover:text-gray-200 active:text-white active:cursor-grabbing"
               >Accessibility</span
             >
           </div>
-          <div class="footer-link w-35 sm:w-39 md:w-39 lg:w-46 xl:w-50">
-            <span id="footer-btn-" class="cursor-pointer active:cursor-grabbing hover:text-white"
+          <div class="footer-link">
+            <span
+              id="footer-btn-data-protection"
+              class="cursor-pointer hover:text-gray-200 active:text-white active:cursor-grabbing"
               >Data protection</span
             >
           </div>
-          <div class="footer-link w-35 sm:w-39 md:w-39 lg:w-46 xl:w-50">
-            <span id="footer-btn-" class="cursor-pointer active:cursor-grabbing hover:text-white"
+          <div class="footer-link">
+            <span
+              id="footer-btn-terms-of-use"
+              class="cursor-pointer hover:text-gray-200 active:text-white active:cursor-grabbing"
               >Terms of Use</span
             >
           </div>
-          <div class="footer-link w-35 sm:w-39 md:w-39 lg:w-46 xl:w-50">
-            <span id="footer-btn-" class="cursor-pointer active:cursor-grabbing hover:text-white"
+          <div class="footer-link">
+            <span
+              id="footer-btn-cookies-and-tracking"
+              class="cursor-pointer hover:text-gray-200 active:text-white active:cursor-grabbing"
               >Cookies & Tracking</span
             >
           </div>
-          <div class="footer-link w-35 sm:w-39 md:w-39 lg:w-46 xl:w-50">
-            <span id="footer-btn-" class="cursor-pointer active:cursor-grabbing hover:text-white"
+          <div class="footer-link sm:max-lg:order-1">
+            <span
+              id="footer-btn-help-and-service"
+              class="cursor-pointer active:cursor-grabbing hover:text-gray-200"
               >Help & Service</span
             >
           </div>
+          <div
+            id="empty-footer-link-spacer"
+            description="used to switch position with last .footer-link in layouts with 3 columns"
+            class="hidden sm:max-lg:block"
+          ></div>
         </div>
         <div id="footer-copyright" class="text-xs font-bold text-gray-400 pt-8 select-none">
           © 2025 Project 2 (Monica. Jan, Dandy)
         </div>
       </div>
+      <!-- Dialog-Fenster für Footer-Links -->
+      <div
+        id="footer-modal-wrapper"
+        class="max-w-xl mx-auto h-full flex justify-center items-center fixed top-0 left-0 text-black"
+        hidden
+      >
+        <div id="footer-modal-login" class="footer-modal bg-white overflow-y-scroll" hidden>
+          Login
+        </div>
+        <div
+          id="footer-modal-newsletter"
+          class="footer-modal w-screen h-screen bg-white overflow-y-scroll"
+          hidden
+        >
+          Newsletter
+        </div>
+        <div
+          id="footer-modal-contact"
+          class="footer-modal w-screen h-screen bg-white overflow-y-scroll"
+          hidden
+        >
+          contact
+        </div>
+        <div
+          id="footer-modal-jobs"
+          class="footer-modal w-screen h-screen bg-white overflow-y-scroll"
+          hidden
+        >
+          jobs
+        </div>
+        <div
+          id="footer-modal-imprint"
+          class="footer-modal w-screen h-screen bg-white overflow-y-scroll"
+          hidden
+        >
+          imprint
+        </div>
+        <div
+          id="footer-modal-accessibility"
+          class="footer-modal w-screen h-screen bg-white overflow-y-scroll"
+          hidden
+        >
+          accessibility
+        </div>
+        <div
+          id="footer-modal-data-protection"
+          class="footer-modal w-screen h-screen bg-white overflow-y-scroll"
+          hidden
+        >
+          data-protection
+        </div>
+        <div
+          id="footer-modal-terms-of-use"
+          class="footer-modal w-screen h-screen bg-white overflow-y-scroll"
+          hidden
+        >
+          terms-of-use
+        </div>
+        <div
+          id="footer-modal-cookies-and-tracking"
+          class="footer-modal w-screen h-screen bg-white overflow-y-scroll"
+          hidden
+        >
+          cookies-and-tracking
+        </div>
+        <div
+          id="footer-modal-help-and-service"
+          class="footer-modal w-screen h-screen bg-white overflow-y-scroll"
+          hidden
+        >
+          help-and-service
+        </div>
+      </div>
     </footer>
+
+    <script>
+      // FUNCTION HANDLER FOR FOOTER LINKS =================================================
+      let modalId;
+      // open window
+      document.querySelectorAll('.footer-link').forEach((btn) =>
+        btn.addEventListener('click', (event) => {
+          // identify button, display matching modal and show wrapper
+          const btnIdent = event.target.id.replace('footer-btn-', '');
+          modalId = 'footer-modal-' + btnIdent;
+          document.getElementById(modalId).hidden = false;
+          document.getElementById('footer-modal-wrapper').hidden = false;
+        })
+      );
+      // close window
+      document.getElementById('footer-modal-wrapper').addEventListener('click', () => {
+        // close wrapper and hide modal for next use
+        document.getElementById('footer-modal-wrapper').hidden = true;
+        // TODO: close here all modals to avoid problems
+        document.getElementById(modalId).hidden = true;
+      });
+    </script>
   </body>
 </html>

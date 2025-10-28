@@ -1,63 +1,108 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DandyMonicaJan – Teamprojekt</title>
-    <!-- CSS Tailwind CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Basis-Typoregeln -->
-    <!-- 1) body: automatisch font-Inter -->
-    <!-- 2) Headline consistency -->
-    <!-- 3) Fließtext fixe Höhe -->
-    <!-- 4) Sekundärtext etwas abgedunkelt -->
-    <style type="text/tailwindcss">
-      @layer base {
-        body {
-          @apply bg-slate-900 text-slate-100 font-[Inter] antialiased;
-        }
-        h1,
-        h2,
-        h3 {
-          @apply font-extrabold tracking-tight;
-        }
-        p {
-          @apply leading-relaxed;
-        }
-        .muted,
-        small {
-          @apply text-slate-400;
-        }
-      }
-    </style>
-    <!-- Google-Font -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>News Homepage</title>
+
+    <!-- Inter (400/600/800) für moderne Typo -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Globale Leitlinien -->
+    <style type="text/tailwindcss">
+      @layer base {
+        /* Grundfarben + Font */
+        body {
+          @apply bg-slate-50 text-slate-900 font-[Inter] antialiased;
+        }
+
+        /* Überschriften (mobile-first, skalieren ab md) */
+        h1 {
+          @apply text-4xl md:text-5xl font-extrabold leading-tight tracking-tight;
+        }
+        h2 {
+          @apply text-2xl md:text-3xl font-extrabold leading-snug;
+        }
+        h3 {
+          @apply text-xl md:text-2xl font-semibold leading-snug;
+        }
+
+        /* Grundtext */
+        p {
+          @apply text-base leading-7 text-slate-700;
+        }
+        /* Bilder */
+        img {
+          @apply block max-w-full h-auto;
+        }
+      }
+
+      @layer utilities {
+        /* Einheitlicher Wrapper für max-width) */
+        .wrap {
+          @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-md sm:max-w-screen-lg lg:max-w-6xl;
+        }
+
+        /* Einheitliche Abstände für Sections */
+        .section-space {
+          @apply py-8 md:py-12;
+        }
+      }
+    </style>
   </head>
 
-  <body class="bg-slate-900 text-slate-100 font-[Inter] antialiased">
-    <header class="py-4 bg-slate-900">
-      <div class="mx-auto max-w-screen-xl px-4 md:px-6 flex items-center justify-between">
-        <!-- Header Content (Monica) -->
+  <body>
+    <!-- Best-Practice für Screenreader Accessibility -->
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:m-4 focus:p-2 focus:bg-white"
+    >
+      Zum Inhalt springen
+    </a>
+
+    <!-- ============== HEADER (Monica) ============== -->
+    <header class="section-space">
+      <div class="wrap">
+        <nav aria-label="Hauptnavigation">
+          <!-- Content -->
+        </nav>
       </div>
     </header>
 
-    <main class="min-h-screen p-6 flex flex-col items-center justify-center text-center">
-      <section class="mx-auto max-w-screen-xl px-4 md:px-6">
-        <!-- Main Content (Jan) -->
+    <main id="main">
+      <section id="hero" class="section-space">
+        <div class="wrap">
+          <!-- Content -->
+        </div>
       </section>
 
-      <section class="mx-auto max-w-screen-xl px-4 md:px-6"><!-- Monica --></section>
-      <section class="mx-auto max-w-screen-xl px-4 md:px-6"><!-- Dandy --></section>
+      <!-- ============== SIDEBAR (Jan) ============== -->
+      <section id="news" class="section-space">
+        <div class="wrap">
+          <!-- Jan -->
+        </div>
+      </section>
+
+      <!-- OPTIONAL -->
+      <section id="features" class="section-space">
+        <div class="wrap">
+          <!-- Extra Content -->
+        </div>
+      </section>
     </main>
 
-    <footer class="py-8 bg-slate-900 text-center">
-      <div class="mx-auto max-w-screen-xl px-4 md:px-6">
-        <!-- Footer Content (Dandy) -->
+    <!-- ============== FOOTER (Dandy) ============== -->
+    <footer class="section-space">
+      <div class="wrap">
+        <!-- Dandy -->
       </div>
     </footer>
   </body>

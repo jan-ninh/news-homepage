@@ -153,78 +153,78 @@
 
     <!-- ============== FOOTER (Dandy) ============== -->
     <footer class="section-space">
-      <div class="wrap">
+      <div class="wrap flex flex-col items-center">
         <div
           id="footer-links"
-          class="pt-15 grid xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 select-none text-xs text-gray-400"
+          class="w-full grid grid-cols-1 min-[380px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 text-center select-none text-xs text-gray-400"
         >
           <div class="footer-link">
             <span
               id="footer-btn-login"
-              class="cursor-pointer hover:text-gray-200 active:text-white lg:active:cursor-grabbing"
+              class="cursor-pointer hover:text-[#f15e50] active:text-white lg:active:cursor-grabbing"
               >Login</span
             >
           </div>
           <div class="footer-link">
             <span
               id="footer-btn-newsletter"
-              class="cursor-pointer hover:text-gray-200 active:text-white active:cursor-grabbing"
+              class="cursor-pointer hover:text-[#f15e50] active:text-white active:cursor-grabbing"
               >Newsletter</span
             >
           </div>
           <div class="footer-link">
             <span
               id="footer-btn-contact"
-              class="cursor-pointer hover:text-gray-200 active:text-white active:cursor-grabbing"
+              class="cursor-pointer hover:text-[#f15e50] active:text-white active:cursor-grabbing"
               >Contact</span
             >
           </div>
           <div class="footer-link">
             <span
               id="footer-btn-jobs"
-              class="cursor-pointer hover:text-gray-200 active:text-white active:cursor-grabbing"
+              class="cursor-pointer hover:text-[#f15e50] active:text-white active:cursor-grabbing"
               >Jobs</span
             >
           </div>
           <div class="footer-link">
             <span
               id="footer-btn-imprint"
-              class="cursor-pointer hover:text-gray-200 active:text-white active:cursor-grabbing"
+              class="cursor-pointer hover:text-[#f15e50] active:text-white active:cursor-grabbing"
               >Imprint</span
             >
           </div>
           <div class="footer-link">
             <span
               id="footer-btn-accessibility"
-              class="cursor-pointer hover:text-gray-200 active:text-white active:cursor-grabbing"
+              class="cursor-pointer hover:text-[#f15e50] active:text-white active:cursor-grabbing"
               >Accessibility</span
             >
           </div>
           <div class="footer-link">
             <span
               id="footer-btn-data-protection"
-              class="cursor-pointer hover:text-gray-200 active:text-white active:cursor-grabbing"
+              class="cursor-pointer hover:text-[#f15e50] active:text-white active:cursor-grabbing"
               >Data protection</span
             >
           </div>
           <div class="footer-link">
             <span
               id="footer-btn-terms-of-use"
-              class="cursor-pointer hover:text-gray-200 active:text-white active:cursor-grabbing"
+              class="cursor-pointer hover:text-[#f15e50] active:text-white active:cursor-grabbing"
               >Terms of Use</span
             >
           </div>
           <div class="footer-link">
             <span
               id="footer-btn-cookies-and-tracking"
-              class="cursor-pointer hover:text-gray-200 active:text-white active:cursor-grabbing"
+              class="cursor-pointer hover:text-[#f15e50] active:text-white active:cursor-grabbing"
               >Cookies & Tracking</span
             >
           </div>
-          <div class="footer-link sm:max-lg:order-1">
+          <div class="footer-link min-[480px]:max-lg:order-1">
             <span
               id="footer-btn-help-and-service"
-              class="cursor-pointer active:cursor-grabbing hover:text-gray-200"
+              class="cursor-pointer hover:text-[#f15e50] active:text-white active:cursor-grabbing"
               >Help & Service</span
             >
           </div>
@@ -241,98 +241,440 @@
       <!-- Dialog-Fenster für Footer-Links -->
       <div
         id="footer-modal-wrapper"
-        class="max-w-xl mx-auto h-full flex justify-center items-center fixed top-0 left-0 text-black"
-        hidden
+        class="hidden w-screen h-screen bg-gray-300/25 flex justify-center items-center fixed top-0 left-0 text-black"
       >
-        <div id="footer-modal-login" class="footer-modal bg-white overflow-y-scroll" hidden>
+        <div
+          id="footer-modal-login"
+          class="footer-modal hidden w-5/6 max-w-lg h-5/6 p-10 bg-white rounded-3xl shadow-sm shadow-gray-900 overflow-y-scroll"
+        >
           Login
+          <!-- TODO: Login Form bauen -->
         </div>
         <div
           id="footer-modal-newsletter"
-          class="footer-modal w-screen h-screen bg-white overflow-y-scroll"
-          hidden
+          class="footer-modal hidden w-5/6 max-w-lg h-5/6 p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll"
         >
           Newsletter
         </div>
         <div
           id="footer-modal-contact"
-          class="footer-modal w-screen h-screen bg-white overflow-y-scroll"
-          hidden
+          class="footer-modal hidden w-5/6 max-w-lg h-5/6 p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll"
         >
           contact
         </div>
         <div
           id="footer-modal-jobs"
-          class="footer-modal w-screen h-screen bg-white overflow-y-scroll"
-          hidden
+          class="footer-modal hidden w-5/6 max-w-lg h-fit p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll"
         >
-          jobs
+          <h2 class="pb-5">Career Opportunities</h2>
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-lg font-semibold mb-2">Current Openings</h3>
+              <ul class="list-disc pl-6 space-y-2">
+                <li>Senior Frontend Developer (m/f/d)</li>
+                <li>Content Editor (m/f/d)</li>
+                <li>Digital Marketing Manager (m/f/d)</li>
+                <li>UI/UX Designer (m/f/d)</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold mb-2">Why Join Us?</h3>
+              <ul class="list-disc pl-6 space-y-2 text-sm">
+                <li>Flexible working hours and remote options</li>
+                <li>Competitive salary and benefits</li>
+                <li>Professional development opportunities</li>
+                <li>Modern tech stack and equipment</li>
+                <li>Great team culture and work-life balance</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold mb-2">How to Apply</h3>
+              <p class="text-sm">
+                Send your CV and cover letter to:<br />
+                careers@project2news.com
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-100 flex justify-end">
+              <button
+                id="accessibility-close"
+                class="px-4 py-2 mt-4 bg-black text-white rounded-md text-sm"
+              >
+                Close
+              </button>
+            </div>
+          </div>
         </div>
         <div
           id="footer-modal-imprint"
-          class="footer-modal w-screen h-screen bg-white overflow-y-scroll"
-          hidden
+          class="footer-modal hidden w-5/6 max-w-lg h-fit p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll"
         >
-          imprint
+          <h2 class="pb-5">Legal Notice / Imprint</h2>
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-lg font-semibold mb-2">Company Information</h3>
+              <p class="text-sm">
+                Project 2 News GmbH<br />
+                Sample Street 123<br />
+                12345 Berlin<br />
+                Germany
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold mb-2">Contact</h3>
+              <p class="text-sm">
+                Phone: +49 30 123456789<br />
+                Email: info@project2news.com<br />
+                Web: www.project2news.com
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold mb-2">Legal Details</h3>
+              <p class="text-sm">
+                Commercial Register: Berlin HRB 12345<br />
+                VAT ID: DE123456789<br />
+                Managing Directors: Monica Smith, Jan Jones, Dandy Brown
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold mb-2">Regulatory Information</h3>
+              <p class="text-sm">
+                Responsible for content according to § 55 Abs. 2 RStV:<br />
+                Monica Smith<br />
+                Project 2 News GmbH<br />
+                Sample Street 123<br />
+                12345 Berlin
+              </p>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex justify-end">
+            <button
+              id="accessibility-close"
+              class="px-4 py-2 mt-4 bg-black text-white rounded-md text-sm"
+            >
+              Close
+            </button>
+          </div>
         </div>
         <div
           id="footer-modal-accessibility"
-          class="footer-modal w-screen h-screen bg-white overflow-y-scroll"
-          hidden
+          class="footer-modal hidden w-5/6 max-w-lg h-fit p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll"
         >
-          accessibility
+          <h2 class="pb-5">Accessibility</h2>
+          <p class="pb-4">
+            We aim to make this site usable for everyone. Below are available accessibility options
+            that help with readability and navigation. Use the controls or your browser/assistive
+            tech to adjust settings.
+          </p>
+
+          <h3 class="pt-4 pb-2">Quick controls</h3>
+          <div class="flex flex-wrap gap-3 pb-6">
+            <button
+              id="accessibility-increase-text"
+              class="px-4 py-2 bg-slate-100 hover:bg-slate-200 rounded-md text-sm"
+            >
+              Increase text size
+            </button>
+            <button
+              id="accessibility-decrease-text"
+              class="px-4 py-2 bg-slate-100 hover:bg-slate-200 rounded-md text-sm"
+            >
+              Decrease text size
+            </button>
+            <button
+              id="accessibility-toggle-contrast"
+              class="px-4 py-2 bg-slate-100 hover:bg-slate-200 rounded-md text-sm"
+            >
+              High contrast mode
+            </button>
+            <button
+              id="accessibility-reset"
+              class="px-4 py-2 bg-slate-100 hover:bg-slate-200 rounded-md text-sm"
+            >
+              Reset settings
+            </button>
+          </div>
+
+          <h3 class="pt-4 pb-2">What this does</h3>
+          <ul class="list-disc pl-6 text-xs space-y-2 pb-6">
+            <li>Increase/decrease text size adjusts the base font for easier reading.</li>
+            <li>High contrast improves color contrast for better legibility.</li>
+            <li>Reset returns all adjustments to the default site settings.</li>
+          </ul>
+
+          <h3 class="pt-4 pb-2">Keyboard & screen reader tips</h3>
+          <p class="text-xs pb-6">
+            Use Tab/Shift+Tab to navigate controls. Press Esc to close this dialog. Headings and
+            buttons are announced by screen readers; use standard browser shortcuts to jump between
+            landmarks.
+          </p>
+
+          <div class="pt-4 border-t border-slate-100 flex justify-end">
+            <button
+              id="accessibility-close"
+              class="px-4 py-2 mt-4 bg-black text-white rounded-md text-sm"
+            >
+              Close
+            </button>
+          </div>
         </div>
         <div
           id="footer-modal-data-protection"
-          class="footer-modal w-screen h-screen bg-white overflow-y-scroll"
-          hidden
+          class="footer-modal hidden w-5/6 max-w-lg h-5/6 p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll"
         >
-          data-protection
+          <h2 class="pb-5">Data Protection</h2>
+          <p>
+            We take the protection of your personal data seriously. This section explains which data
+            we collect, for what purposes and how we process and protect it. By using the site you
+            consent to the practices described here.
+          </p>
+          <ul class="p-8 text-xs list-disc">
+            <li>We collect only the data necessary to provide and improve our services.</li>
+            <li>Personal data is processed lawfully, transparently and for specified purposes.</li>
+            <li>
+              We implement technical and organizational measures to protect data against misuse.
+            </li>
+            <li>
+              Data may be shared with processors or partners where required to run the service.
+            </li>
+          </ul>
+          <p>
+            Cookies and similar technologies may be used to enable basic site functions, analyze
+            usage and personalise content. You can manage cookie settings in your browser; some
+            features may be limited if cookies are disabled.
+          </p>
+          <h3 class="pt-10 pb-5">Your rights</h3>
+          <p>
+            You have the right to access, rectify or erase your personal data, as well as the right
+            to restrict or object to processing and to data portability where applicable. For
+            requests or questions about privacy, please contact the site operator using the contact
+            information provided elsewhere on the site.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus beatae ex placeat
+            veritatis sunt fugiat aliquid qui sint porro eveniet rem quas et harum omnis consectetur
+            reiciendis voluptas, tenetur distinctio eum numquam rerum accusamus? Mollitia, adipisci
+            doloremque vitae expedita, quasi dolor, consectetur quod eaque similique enim esse modi
+            laborum eligendi.
+          </p>
+          <ul class="p-8 text-xs list-disc">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, voluptatem deleniti
+            impedit perferendis similique voluptas, amet culpa aliquam totam aperiam corporis! Hic
+            eum sunt dolorum veritatis incidunt blanditiis. Ducimus cumque quia, omnis sapiente est
+            voluptas, sunt recusandae magni obcaecati illo quis deserunt minus! Voluptates, amet
+            excepturi obcaecati esse molestias minima.
+          </p>
+          <h3 class="pt-10 pb-5">Lorem, ipsum.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem laboriosam id quis,
+            totam mollitia explicabo omnis nostrum? Velit porro perferendis, excepturi enim pariatur
+            quasi magni deserunt reiciendis soluta quisquam eaque mollitia officiis sunt nesciunt
+            magnam nulla iusto consequuntur culpa eligendi optio nostrum nisi voluptatum eveniet.
+            Pariatur sint repellendus aliquam, ratione possimus ducimus dolor exercitationem,
+            suscipit libero quidem ipsam debitis hic quasi cupiditate voluptatem magnam
+            reprehenderit nam impedit alias mollitia modi doloribus tempore aut. Eos nesciunt dicta
+            nam dolore vero nihil tempora, corrupti molestias eum excepturi cum magnam id est! Nemo
+            quasi neque sapiente in sunt doloremque eaque quos mollitia consequatur obcaecati,
+            accusamus asperiores et aperiam quia dolorum tempora eveniet vero voluptas nostrum.
+            Voluptate nesciunt numquam at. Quos eius porro voluptatibus perspiciatis ipsa impedit.
+            Id quasi aut perspiciatis possimus sapiente iure molestiae et non, quos recusandae,
+            porro odit quisquam libero impedit quis molestias architecto repellat, explicabo
+            dignissimos earum alias minus sequi exercitationem aspernatur. Laudantium consequuntur
+            fuga sapiente voluptatum eveniet, corrupti provident, dolores explicabo, eum modi animi!
+            Placeat dolore iure veritatis libero et quia aspernatur minima. Voluptas blanditiis
+            corporis veniam odio vitae, reiciendis fugiat repellat. Minus illum adipisci blanditiis,
+            voluptates perferendis cum illo iure modi repellat aut, optio error! Voluptatem, minima
+            labore?
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quis reiciendis ipsa
+            perspiciatis veniam aspernatur? Corporis fuga quaerat animi mollitia laboriosam quisquam
+            consequatur repellendus facere tenetur laborum dignissimos ea architecto nemo qui quae
+            in exercitationem, officia cumque cupiditate quo. Asperiores ducimus repellendus ullam
+            totam pariatur quos debitis eum, et suscipit nisi iusto quas! Corrupti dicta ab nihil
+            eaque similique quos harum reiciendis sunt laborum excepturi, aspernatur nesciunt
+            tempora ut, pariatur voluptatem quaerat? Minima ut ipsa ipsam cupiditate iusto molestiae
+            porro?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod quia inventore eligendi
+            consequatur quaerat illum, sapiente cumque atque voluptatem hic sit voluptatum laborum
+            eveniet fugiat quo dicta veritatis. Voluptatum, molestias. Quis rem commodi non nemo
+            similique maiores voluptatibus. Accusantium, saepe deserunt at ipsam sapiente vitae
+            omnis minima reiciendis autem eum cum in asperiores tempore fuga quibusdam a, voluptatem
+            ratione blanditiis neque veniam quia perferendis unde fugit. Sequi provident adipisci
+            sapiente similique! Consequuntur tenetur aliquam in maxime sunt numquam quisquam dolor.
+            Impedit dolorem ratione illo ea placeat, optio, itaque laborum in quidem recusandae
+            nulla odio nam molestias quia repudiandae rem consectetur?
+          </p>
+          <div class="pt-4 border-t border-slate-100 flex justify-end">
+            <button
+              id="accessibility-close"
+              class="px-4 py-2 mt-4 bg-black text-white rounded-md text-sm"
+            >
+              Close
+            </button>
+          </div>
         </div>
         <div
           id="footer-modal-terms-of-use"
-          class="footer-modal w-screen h-screen bg-white overflow-y-scroll"
-          hidden
+          class="footer-modal hidden w-5/6 max-w-lg h-fit p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll"
         >
-          terms-of-use
+          <h2 class="pb-5">Terms of Use</h2>
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-lg font-semibold mb-2">1. Acceptance of Terms</h3>
+              <p class="text-sm">
+                By accessing and using this website, you accept and agree to be bound by these terms
+                and conditions.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold mb-2">2. Use License</h3>
+              <ul class="list-disc pl-6 space-y-2 text-sm">
+                <li>Content is protected by copyright and other intellectual property rights</li>
+                <li>Personal, non-commercial use only</li>
+                <li>No redistribution without permission</li>
+                <li>No modification or copying of materials</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold mb-2">3. Disclaimer</h3>
+              <p class="text-sm">
+                Materials are provided "as is". We make no warranties, expressed or implied, and
+                hereby disclaim all warranties including merchantability and fitness for a
+                particular purpose.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold mb-2">4. Limitations</h3>
+              <p class="text-sm">
+                We shall not be held liable for any damages arising from the use or inability to use
+                our materials.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold mb-2">5. Revisions</h3>
+              <p class="text-sm">
+                We reserve the right to update these terms at any time. Your continued use
+                constitutes acceptance of changes.
+              </p>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex justify-end">
+            <button
+              id="accessibility-close"
+              class="px-4 py-2 mt-4 bg-black text-white rounded-md text-sm"
+            >
+              Close
+            </button>
+          </div>
         </div>
         <div
           id="footer-modal-cookies-and-tracking"
-          class="footer-modal w-screen h-screen bg-white overflow-y-scroll"
-          hidden
+          class="footer-modal hidden w-5/6 max-w-lg h-fit p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll"
         >
-          cookies-and-tracking
+          <h2 class="pb-5">Cookies & Tracking</h2>
+          <p>
+            We use cookies and similar technologies to enhance your experience on our site. Below
+            are the options you can manage:
+          </p>
+          <p>
+            Cookies are small text files that are stored on your device when you visit our website.
+            They help us understand how you interact with our site, allowing us to improve your
+            experience and provide personalized content.
+          </p>
+          <div class="space-y-4">
+            <div>
+              <h3 class="text-lg font-semibold mb-2">Cookie Preferences</h3>
+              <label class="flex items-center">
+                <input type="checkbox" id="cookie-necessary" checked disabled />
+                <span class="ml-2">Necessary Cookies (Always Active)</span>
+              </label>
+              <p class="text-sm text-gray-600">
+                These cookies are essential for the website to function properly and cannot be
+                disabled. They ensure basic functionalities such as page navigation and access to
+                secure areas of the website.
+              </p>
+              <label class="flex items-center">
+                <input type="checkbox" id="cookie-analytics" />
+                <span class="ml-2">Analytics Cookies</span>
+              </label>
+              <p class="text-sm text-gray-600">
+                These cookies help us understand how visitors interact with our website by
+                collecting and reporting information anonymously. This data helps us improve our
+                website's performance and user experience.
+              </p>
+              <label class="flex items-center">
+                <input type="checkbox" id="cookie-marketing" />
+                <span class="ml-2">Marketing Cookies</span>
+              </label>
+              <p class="text-sm text-gray-600">
+                Marketing cookies are used to track visitors across websites. The intention is to
+                display ads that are relevant and engaging for the individual user, thereby more
+                valuable for publishers and third-party advertisers.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-100 flex justify-end">
+              <button
+                id="accessibility-close"
+                class="px-4 py-2 mt-4 bg-black text-white rounded-md text-sm"
+              >
+                Close
+              </button>
+            </div>
+          </div>
         </div>
         <div
           id="footer-modal-help-and-service"
-          class="footer-modal w-screen h-screen bg-white overflow-y-scroll"
-          hidden
+          class="footer-modal hidden w-5/6 max-w-lg h-fit p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll"
         >
-          help-and-service
+          <h2 class="pb-5">Help & Service</h2>
+          <p>
+            If you have any questions or need assistance, please reach out to our support team. We
+            are here to help you!
+          </p>
+          <div class="space-y-4">
+            <div>
+              <h3 class="text-lg font-semibold mb-2">Contact Support</h3>
+              <p class="text-sm">
+                Email: support@project2news.com<br />
+                Phone: +49 30 987654321
+              </p>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold mb-2">Frequently Asked Questions</h3>
+              <ul class="list-disc pl-6 space-y-2">
+                <li>How can I reset my password?</li>
+                <li>Where can I find the latest news?</li>
+                <li>How do I unsubscribe from the newsletter?</li>
+              </ul>
+            </div>
+            <div class="pt-4 border-t border-slate-100 flex justify-end">
+              <button
+                id="accessibility-close"
+                class="px-4 py-2 mt-4 bg-black text-white rounded-md text-sm"
+              >
+                Close
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
-
-    <script>
-      // FUNCTION HANDLER FOR FOOTER LINKS =================================================
-      let modalId;
-      // open window
-      document.querySelectorAll('.footer-link').forEach((btn) =>
-        btn.addEventListener('click', (event) => {
-          // identify button, display matching modal and show wrapper
-          const btnIdent = event.target.id.replace('footer-btn-', '');
-          modalId = 'footer-modal-' + btnIdent;
-          document.getElementById(modalId).hidden = false;
-          document.getElementById('footer-modal-wrapper').hidden = false;
-        })
-      );
-      // close window
-      document.getElementById('footer-modal-wrapper').addEventListener('click', () => {
-        // close wrapper and hide modal for next use
-        document.getElementById('footer-modal-wrapper').hidden = true;
-        // TODO: close here all modals to avoid problems
-        document.getElementById(modalId).hidden = true;
-      });
-    </script>
   </body>
 </html>

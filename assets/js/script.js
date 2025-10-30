@@ -1,4 +1,4 @@
-const navigation = (function () {
+(function () {
   const btnMenuOpen = document.querySelector('#btn-menu-open');
   const btnMenuClose = document.querySelector('#btn-menu-close');
   const navbar = document.querySelector('#navbar');

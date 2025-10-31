@@ -281,7 +281,7 @@
         <!-- Login -->
         <div
           id="footer-modal-login"
-          class="footer-modal hidden w-5/6 max-w-lg max-h-[85vh] p-10 bg-white rounded-3xl shadow-sm shadow-gray-900 overflow-y-scroll"
+          class="footer-modal hidden w-5/6 max-w-lg max-h-[85vh] p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll select-none"
         >
           <h2 class="pb-5">My Account</h2>
           <p>Sign in to your personal profile.</p>
@@ -299,11 +299,9 @@
             <button class="mt-4 p-3 rounded bg-green-600 border-2">Join</button>
             <!-- TODO: forgot password + create account -->
           </form>
-          <div
-            class="flex flex-col items-center gap-5 py-5 text-xs text-gray-400 hover:text-[#f15e50]"
-          >
-            <div class="">Forgot password</div>
-            <div class="">Create Account</div>
+          <div class="flex flex-col items-center gap-5 py-5 text-xs text-gray-400">
+            <div class="hover:text-[#f15e50] hover:cursor-pointer">Forgot password</div>
+            <div class="hover:text-[#f15e50] hover:cursor-pointer">Create Account</div>
           </div>
           <div class="pt-4 border-t border-slate-100 flex justify-end">
             <button class="px-4 py-2 mt-4 bg-black text-white rounded-md text-sm" closeModal>
@@ -315,11 +313,20 @@
         <!-- Newsletter -->
         <div
           id="footer-modal-newsletter"
-          class="footer-modal hidden w-5/6 max-w-lg max-h-[85vh] p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll"
+          class="footer-modal hidden w-5/6 max-w-lg max-h-[85vh] p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll select-none"
         >
-          Newsletter
-          <!-- TODO: Newsletter Form bauen -->
-
+          <h2 class="pb-5">Subscribe Us!</h2>
+          <p>You want the latest News and Information abuot us? Send us your mail.</p>
+          <form action="" method="dialog" class="py-6 grid gap-6">
+            <input
+              type="text"
+              placeholder="Your Email here..."
+              class="bg-gray-100 border-2 rounded p-2 placeholder:italic"
+              name="subscriptionmail"
+            />
+            <button class="mt-4 p-3 rounded bg-blue-300 border-2">Send</button>
+            <!-- TODO: forgot password + create account -->
+          </form>
           <div class="pt-4 border-t border-slate-100 flex justify-end">
             <button class="px-4 py-2 mt-4 bg-black text-white rounded-md text-sm" closeModal>
               Close
@@ -330,7 +337,7 @@
         <!-- Contact -->
         <div
           id="footer-modal-contact"
-          class="footer-modal hidden w-5/6 max-w-lg max-h-[85vh] p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll"
+          class="footer-modal hidden w-5/6 max-w-lg max-h-[85vh] p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll select-none"
         >
           contact
           <!-- TODO: Contact Form bauen -->
@@ -388,7 +395,7 @@
         <!-- Imprint -->
         <div
           id="footer-modal-imprint"
-          class="footer-modal hidden w-5/6 max-w-lg max-h-[85vh] p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll"
+          class="footer-modal hidden w-5/6 max-w-lg max-h-[85vh] p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll select-none"
         >
           <h2 class="pb-5">Legal Notice / Imprint</h2>
           <div class="space-y-6">
@@ -441,7 +448,7 @@
         <!-- Accessibility -->
         <div
           id="footer-modal-accessibility"
-          class="footer-modal hidden w-5/6 max-w-lg max-h-[85vh] p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll"
+          class="footer-modal hidden w-5/6 max-w-lg max-h-[85vh] p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll select-none"
         >
           <h2 class="pb-5">Accessibility</h2>
           <p class="pb-4">
@@ -502,7 +509,7 @@
         <!-- Data protection -->
         <div
           id="footer-modal-data-protection"
-          class="footer-modal hidden w-5/6 max-w-lg max-h-[85vh] p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll"
+          class="footer-modal hidden w-5/6 max-w-lg max-h-[85vh] p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll select-none"
         >
           <h2 class="pb-5">Data Protection</h2>
           <p>
@@ -605,7 +612,7 @@
         <!-- Terms of use -->
         <div
           id="footer-modal-terms-of-use"
-          class="footer-modal hidden w-5/6 max-w-lg max-h-[85vh] p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll"
+          class="footer-modal hidden w-5/6 max-w-lg max-h-[85vh] p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll select-none"
         >
           <h2 class="pb-5">Terms of Use</h2>
           <div class="space-y-6">
@@ -662,7 +669,7 @@
         <!-- Cookies & Tracking -->
         <div
           id="footer-modal-cookies-and-tracking"
-          class="footer-modal hidden w-5/6 max-w-lg max-h-[85vh] p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll"
+          class="footer-modal hidden w-5/6 max-w-lg max-h-[85vh] p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll select-none"
         >
           <h2 class="pb-5">Cookies & Tracking</h2>
           <p>
@@ -716,7 +723,7 @@
         <!-- Help & Service -->
         <div
           id="footer-modal-help-and-service"
-          class="footer-modal hidden w-5/6 max-w-lg max-h-[85vh] p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll"
+          class="footer-modal hidden w-5/6 max-w-lg max-h-[85vh] p-10 bg-white rounded-3xl shadow-lg shadow-gray-900 overflow-y-scroll select-none"
         >
           <h2 class="pb-5">Help & Service</h2>
           <p>
